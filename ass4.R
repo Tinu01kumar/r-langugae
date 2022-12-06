@@ -1,0 +1,15 @@
+empid<-c(1,2,3,4)
+empname<-c('A','B','C','D')
+empsal<-c(1000,5000,20000,25000)
+employee<-list('ID'=empid , "Name" = empname , "salary"=empsal)
+print(employee)
+print(employee[[2]])
+empage<-list("AGE"=c(22,33,4,4))
+empage
+employee<-c(employee , empage)
+print(empage)
+print(employee)
+m<-matrix(unlist(employee) , nrow=4 , ncol=4 , byrow=TRUE)
+print(m)
+m<-matrix(unlist(employee) , nrow=4 , ncol=4 , byrow=FALSE)
+m

@@ -1,0 +1,10 @@
+data<-read.csv(file.choose())
+data
+print(mean((data$Age)))
+print(median((data$Age)))
+print(unique(data$Age))
+m<-unique(data $ Age)
+mt<-tabulate(match(data $Age , m))
+print(mt)
+print(m[mt==max(mt)])
+dim(data)
